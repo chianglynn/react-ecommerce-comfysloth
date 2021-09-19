@@ -54,7 +54,7 @@ const Wrapper = styled.section`
     }
 
     .hero-btn {
-      padding: 0.75rem 1.5rem;
+      padding: .75rem 1.5rem;
       font-size: 1rem;
     }
 
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
       width: 10%;
       height: 80%;
       border-radius: var(--radius);
-      background: var(--clr-primary-9);
+      background-color: var(--clr-primary-9);
     }
   }
 `;

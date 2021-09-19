@@ -57,7 +57,7 @@ const NavContainer = styled.nav`
   .nav-toggle {
     color: var(--clr-primary-5);
     border: transparent;
-    background: transparent;
+    background-color: transparent;
     cursor: pointer;
 
     svg {

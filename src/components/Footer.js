@@ -20,14 +20,14 @@ const Wrapper = styled.footer`
   align-items: center;
   height: 5rem;
   text-align: center;
-  background: var(--clr-black);
+  background-color: var(--clr-black);
 
   span {
     color: var(--clr-primary-5);
   }
 
   h5 {
-    margin: 0.1rem;
+    margin: .1rem;
     font-weight: 400;
     color: var(--clr-white);
     text-transform: none;

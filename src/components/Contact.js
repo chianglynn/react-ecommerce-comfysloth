@@ -66,7 +66,7 @@ const Wrapper = styled.section`
     color: var(--clr-black);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
-    background: var(--clr-primary-5);
+    background-color: var(--clr-primary-5);
     transition: var(--transition);
     cursor: pointer;
   }

@@ -71,7 +71,7 @@ const Wrapper = styled.section`
       color: var(--clr-black);
       border: 1px solid var(--clr-black);
       border-radius: var(--radius);
-      background: transparent;
+      background-color: transparent;
       cursor: pointer;
 
       svg {
@@ -81,7 +81,7 @@ const Wrapper = styled.section`
 
     .active {
       color: var(--clr-white);
-      background: var(--clr-black);
+      background-color: var(--clr-black);
     }
   }
 

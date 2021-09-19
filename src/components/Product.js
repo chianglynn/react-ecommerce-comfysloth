@@ -23,7 +23,7 @@ const Wrapper = styled.article`
   .container {
     position: relative;
     border-radius: var(--radius);
-    background: var(--clr-black);
+    background-color: var(--clr-black);
   }
 
   img {
@@ -44,7 +44,7 @@ const Wrapper = styled.article`
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    background: var(--clr-primary-5);
+    background-color: var(--clr-primary-5);
     transform: translate(-50%, -50%);
     transition: var(--transition);
     opacity: 0;
@@ -57,7 +57,7 @@ const Wrapper = styled.article`
   }
 
   .container:hover img {
-    opacity: 0.5;
+    opacity: .5;
   }
 
   .container:hover .link {

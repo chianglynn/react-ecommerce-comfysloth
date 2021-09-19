@@ -53,21 +53,21 @@ const Wrapper = styled.div`
     position: absolute;
     top: -10px;
     right: -16px;
-    background: var(--clr-primary-5);
+    background-color: var(--clr-primary-5);
     width: 16px;
     height: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 0.75rem;
+    font-size: .75rem;
     color: var(--clr-white);
     padding: 12px;
   }
   .auth-btn {
     display: flex;
     align-items: center;
-    background: transparent;
+    background-color: transparent;
     border-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;

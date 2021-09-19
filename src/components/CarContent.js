@@ -16,20 +16,22 @@ const Wrapper = styled.section`
     justify-content: space-between;
     margin-top: 2rem;
   }
+
   .link-btn {
-    background: transparent;
-    border-color: transparent;
-    text-transform: capitalize;
-    padding: 0.25rem 0.5rem;
-    background: var(--clr-primary-5);
-    color: var(--clr-white);
-    border-radius: var(--radius);
-    letter-spacing: var(--spacing);
+    padding: .25rem .5rem;
     font-weight: 400;
+    color: var(--clr-white);
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    border-color: transparent;
+    border-radius: var(--radius);
+    /* background-color: transparent; */
+    background-color: var(--clr-primary-5);
     cursor: pointer;
   }
+  
   .clear-btn {
-    background: var(--clr-black);
+    background-color: var(--clr-black);
   }
 `;
 

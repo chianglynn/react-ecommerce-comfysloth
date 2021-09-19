@@ -15,17 +15,19 @@ const ErrorPage = () => {
 };
 
 const Wrapper = styled.main`
-  background: var(--clr-primary-10);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--clr-primary-10);
+
   h1 {
     font-size: 10rem;
   }
+
   h3 {
-    text-transform: none;
     margin-bottom: 2rem;
+    text-transform: none;
   }
 `;
 

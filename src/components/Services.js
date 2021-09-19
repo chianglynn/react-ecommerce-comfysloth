@@ -31,7 +31,7 @@ const Services = () => {
 
 const Wrapper = styled.section`
   padding: 5rem 0;
-  background: var(--clr-primary-10);
+  background-color: var(--clr-primary-10);
 
   h3,
   h4 {
@@ -58,7 +58,7 @@ const Wrapper = styled.section`
     padding: 2.5rem 2rem;
     text-align: center;
     border-radius: var(--radius);
-    background: var(--clr-primary-7);
+    background-color: var(--clr-primary-7);
 
     p {
       color: var(--clr-primary-2);
@@ -73,7 +73,7 @@ const Wrapper = styled.section`
     height: 4rem;
     color: var(--clr-primary-1);
     border-radius: 50%;
-    background: var(--clr-primary-10);
+    background-color: var(--clr-primary-10);
 
     svg {
       font-size: 2rem;

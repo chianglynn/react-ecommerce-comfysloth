@@ -23,7 +23,7 @@ const Wrapper = styled.section`
   width: 100%;
   color: var(--clr-primary-1);
   min-height: 20vh;
-  background: var(--clr-primary-10);
+  background-color: var(--clr-primary-10);
 
   a {
     padding: 0.5rem;

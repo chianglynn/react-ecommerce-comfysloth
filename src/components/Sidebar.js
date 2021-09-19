@@ -41,11 +41,11 @@ const SidebarContainer = styled.div`
   }
 
   .close-btn {
-    margin-top: 0.2rem;
+    margin-top: .2rem;
     font-size: 2rem;
     color: var(--clr-red-dark);
     border-color: transparent;
-    background: transparent;
+    background-color: transparent;
     transition: var(--transition);
     cursor: pointer;
   }
@@ -77,7 +77,7 @@ const SidebarContainer = styled.div`
   .links a:hover {
     padding: 1rem 1.5rem 1rem 2rem;
     color: var(--clr-grey-2);
-    background: var(--clr-grey-10);
+    background-color: var(--clr-grey-10);
   }
 
   .sidebar {
@@ -86,7 +86,7 @@ const SidebarContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-white);
+    background-color: var(--clr-white);
     transform: translate(-100%);
     transition: var(--transition);
     z-index: -1;

@@ -53,17 +53,17 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.5rem;
+    margin-right: .5rem;
     width: 1.5rem;
     height: 1.5rem;
     border: none;
     border-radius: 50%;
-    background: #222;
-    opacity: 0.5;
+    background-color: #222;
+    opacity: .5;
     cursor: pointer;
 
     svg {
-      font-size: 0.75rem;
+      font-size: .75rem;
       color: var(--clr-white);
     }
   }

@@ -31,7 +31,7 @@ const Wrapper = styled.div`
     width: 2rem;
     height: 1rem;
     border-color: transparent;
-    background: transparent;
+    background-color: transparent;
     cursor: pointer;
   }
 
