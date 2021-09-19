@@ -3,8 +3,25 @@ import styled from 'styled-components';
 import { formatPrice } from '../utils/helpers';
 import { Link } from 'react-router-dom';
 
-const ListView = () => {
-  return <h4>list view</h4>;
+const ListView = ({ products }) => {
+  return (
+    <Wrapper>
+      {products.map(product => {
+        const { id, name, price, image, description } = product;
+        return (
+          <article key={id}>
+            <img src={image} alt={name} />
+            <div>
+              <h4>{name}</h4>
+              <h5 className="price">{formatPrice(price)}</h5>
+              <p>{description.substring(0, 150)}...</p>
+              <Link to={`/products/${id}`} className="btn">details</Link>
+            </div>
+          </article>
+        );
+      })}
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.section`
@@ -12,29 +29,33 @@ const Wrapper = styled.section`
   row-gap: 3rem;
 
   img {
-    width: 100%;
     display: block;
+    margin-bottom: 1rem;
+    width: 100%;
     width: 300px;
     height: 200px;
-    object-fit: cover;
     border-radius: var(--radius);
-    margin-bottom: 1rem;
+    object-fit: cover;
   }
+
   h4 {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
   }
+
   .price {
+    margin-bottom: .75rem;
     color: var(--clr-primary-6);
-    margin-bottom: 0.75rem;
   }
   p {
-    max-width: 45em;
     margin-bottom: 1rem;
+    max-width: 45em;
   }
+
   .btn {
-    font-size: 0.5rem;
-    padding: 0.25rem 0.5rem;
+    padding: .25rem .5rem;
+    font-size: .5rem;
   }
+
   @media (min-width: 992px) {
     article {
       display: grid;
