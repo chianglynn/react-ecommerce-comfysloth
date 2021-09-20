@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 import { useCartContext } from '../context/cart_context';
 import AmountButtons from './AmountButtons';
 
-const AddToCart = ({ id, colors, stock }) => {
+const AddToCart = ({ product }) => {
+  const { id, colors, stock } = product;
+  const { addToCart } = useCartContext();
   const [mainColor, setMainColor] = useState(colors[0]);
   const [amount, setAmount] = useState(1);
 
@@ -24,7 +26,7 @@ const AddToCart = ({ id, colors, stock }) => {
       </div>
       <div className="btn-container">
         <AmountButtons amount={amount} decrease={decrease} increase={increase} />
-        <Link to="/cart" className="btn">add to cart</Link>
+        <Link to="/cart" className="btn" onClick={() => addToCart(id, mainColor, amount, product)}>add to cart</Link>
       </div>
     </Wrapper>
   );
