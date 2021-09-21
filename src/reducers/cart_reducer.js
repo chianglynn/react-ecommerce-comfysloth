@@ -40,15 +40,11 @@ const cart_reducer = (state, action) => {
 
     case TOGGLE_CART_ITEM_AMOUNT:
       const tempCart = state.cart.map(item => {
+        let newAmount;
         if (item.id === action.payload.id) {
-          if (action.payload.value === 'decrease') {
-            let newAmount = item.amount === 1 ? 1 : item.amount - 1;
-            return { ...item, amount: newAmount };
-          }
-          if (action.payload.value === 'increase') {
-            let newAmount = item.amount === item.max ? item.max : item.amount + 1;
-            return { ...item, amount: newAmount };
-          }
+          if (action.payload.value === 'decrease') newAmount = item.amount === 1 ? 1 : item.amount - 1;
+          if (action.payload.value === 'increase') newAmount = item.amount === item.max ? item.max : item.amount + 1;
+          return { ...item, amount: newAmount };
         } else {
           return item;
         }
