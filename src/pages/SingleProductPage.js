@@ -14,16 +14,18 @@ const SingleProductPage = () => {
 
   useEffect(() => {
     fetchSingleProduct(`${url}${id}`);
+    // eslint-disable-next-line
   }, [id]);
 
   useEffect(() => {
     if (error) setTimeout(() => history.push('/'), 3000);
+    // eslint-disable-next-line
   }, [error]);
 
   if (loading) return <Loading />;
   if (error) return <Error />;
 
-  const { id: sku, name, price, images, description, colors, company, stock, stars, reviews } = product;
+  const { id: sku, name, price, images, description, company, stock, stars, reviews } = product;
 
   return (
     <Wrapper>
