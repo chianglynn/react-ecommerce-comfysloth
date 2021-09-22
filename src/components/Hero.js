@@ -13,7 +13,7 @@ const Hero = () => {
           comfort zone
         </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit reprehenderit illo incidunt sit iusto. Inventore porro laborum iure ratione?</p>
-        <Link to="/product" className="btn hero-btn">shop now</Link>
+        <Link to="/products" className="btn hero-btn">shop now</Link>
       </article>
       <article className="img-container">
         <img src={heroBcg} alt="table" className="main-img" />
