@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { loadStripe } from '@stripe/stripe-js';
-import {
-  CardElement,
-  useStripe,
-  useElements,
-  Elements,
-} from '@stripe/react-stripe-js';
+import { CardElement, useStripe, useElements, Elements, } from '@stripe/react-stripe-js';
 import axios from 'axios';
 import { useCartContext } from '../context/cart_context';
 import { useUserContext } from '../context/user_context';
 import { formatPrice } from '../utils/helpers';
 import { useHistory } from 'react-router-dom';
 
-// // Stripe - Sample integration: https://stripe.com/docs/payments/integration-builder
+// Stripe custom payment flow integration: https://stripe.com/docs/payments/integration-builder
 const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const CheckoutForm = () => {

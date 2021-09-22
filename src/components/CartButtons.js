@@ -41,47 +41,49 @@ const Wrapper = styled.div`
   width: 225px;
 
   .cart-btn {
-    color: var(--clr-grey-1);
-    font-size: 1.5rem;
-    letter-spacing: var(--spacing);
-    color: var(--clr-grey-1);
     display: flex;
-
     align-items: center;
+    font-size: 1.5rem;
+    color: var(--clr-grey-1);
+    letter-spacing: var(--spacing);
   }
   .cart-container {
     display: flex;
     align-items: center;
     position: relative;
+
     svg {
-      height: 1.6rem;
       margin-left: 5px;
+      height: 1.6rem;
     }
   }
+
   .cart-value {
     position: absolute;
     top: -10px;
     right: -16px;
-    background-color: var(--clr-primary-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
     width: 16px;
     height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
     font-size: .75rem;
     color: var(--clr-white);
-    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--clr-primary-5);
   }
+
   .auth-btn {
     display: flex;
     align-items: center;
-    background-color: transparent;
-    border-color: transparent;
     font-size: 1.5rem;
-    cursor: pointer;
     color: var(--clr-grey-1);
     letter-spacing: var(--spacing);
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
     svg {
       margin-left: 5px;
     }
