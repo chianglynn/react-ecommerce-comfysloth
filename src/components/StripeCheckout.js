@@ -105,7 +105,8 @@ const CheckoutForm = () => {
         <article>
           <h4>Hello, {myUser && myUser.name}</h4>
           <p>Your total is {formatPrice(shipping_fee + total_amount)}</p>
-          <p>Test Card Number : 4242 4242 4242 4242 (with any CVC, U.S. postal code, and future expiry date.)</p>
+          <p>Test Card Number : 4242 4242 4242 4242<br />
+            (with any CVC, U.S. postal code, and future expiry date.)</p>
         </article>}
 
       <form id="payment-form" onSubmit={handleSubmit}>
@@ -294,11 +295,6 @@ const Wrapper = styled.section`
     form {
       width: 80vw;
     }
-  }
-
-  p{
-    margin: 1rem auto;
-    width:80vw;
   }
 `;
 
