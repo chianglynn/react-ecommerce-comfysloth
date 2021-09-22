@@ -1,6 +1,6 @@
 # React E-Commerce Project - ComfySloth
 
-This is a project of the [React Tutorial and Projects Course](https://www.udemy.com/course/react-tutorial-and-projects-course/).
+This is a react project from the [React Tutorial and Projects Course](https://www.udemy.com/course/react-tutorial-and-projects-course/).
 
 ## Table of contents
 
@@ -23,7 +23,7 @@ This is a project of the [React Tutorial and Projects Course](https://www.udemy.
 
 ### Structure
 
-![img]()
+![img](https://github.com/chianglynn/react-ecommerce-comfysloth/blob/main/structure.png?raw=true)
 
 ### Links
 
