@@ -53,7 +53,9 @@ The useful resources are as follows.
 ](https://docs.netlify.com/functions/build-with-javascript/)
 - [Stripe - Custom payment flow integration](https://stripe.com/docs/payments/integration-builder)
 - The payment process flow on Stripe
-![img](https://stripe.com/docs/security/data-migrations/imports)
+
+![img](https://b.stripecdn.com/docs-srv/assets/charge-workflow.330ac424ab8c0a423195b3e1020eedb9.png)
+
 -[Auth0 - Docs for React](https://auth0.com/docs/quickstart/spa/react)
 
 ## Author
