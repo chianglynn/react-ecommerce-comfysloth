@@ -13,18 +13,18 @@ const Services = () => {
           </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in ullam molestias dolore non id error a laborum ipsa libero.</p>
         </article>
-      </div><div className="services-center">
-        {services.map(({ id, icon, title, text }) => {
-          return (
-            <article className="service" key={id}>
-              <span className="icon">{icon}</span>
-              <h4>{title}</h4>
-              <p>{text}</p>
-            </article>
-          );
-        })}
+        <div className="services-center">
+          {services.map(({ id, icon, title, text }) => {
+            return (
+              <article className="service" key={id}>
+                <span className="icon">{icon}</span>
+                <h4>{title}</h4>
+                <p>{text}</p>
+              </article>
+            );
+          })}
+        </div>
       </div>
-
     </Wrapper>
   );
 };
