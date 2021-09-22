@@ -1,18 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PageHero, StripeCheckout } from '../components';
+import { useCartContext } from '../context/cart_context';
+import { Link } from 'react-router-dom';
 
 const CheckoutPage = () => {
+  const { cart } = useCartContext();
+
   return (
     <main>
       <PageHero title="checkout" />
       <Wrapper className="page">
-        <h1>checkout here</h1>
+        {cart.length === 0 ?
+          <div className="empt">
+            <h1>your cart is empty</h1>
+            <Link to="/products" className="btn">fill it</Link>
+          </div> :
+          <StripeCheckout />}
       </Wrapper>
     </main>
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .empty{
+    text-align: center;
+    text-transform: capitalize;
+  }
+`;
 
 export default CheckoutPage;
