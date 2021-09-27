@@ -20,7 +20,6 @@ This is a react project from the [React Tutorial and Projects Course](https://ww
 
 ![img](https://github.com/chianglynn/react-ecommerce-comfysloth/blob/main/src/screenshot/screenshot.png?raw=true)
 
-
 ### Structure
 
 ![img](https://github.com/chianglynn/react-ecommerce-comfysloth/blob/main/structure.png?raw=true)
