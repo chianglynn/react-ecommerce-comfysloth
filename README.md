@@ -55,7 +55,7 @@ The useful resources are as follows.
 
 ![img](https://b.stripecdn.com/docs-srv/assets/charge-workflow.330ac424ab8c0a423195b3e1020eedb9.png)
 
--[Auth0 - Docs for React](https://auth0.com/docs/quickstart/spa/react)
+- [Auth0 - Docs for React](https://auth0.com/docs/quickstart/spa/react)
 
 ## Author
 
